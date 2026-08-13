@@ -1,5 +1,5 @@
 {
-  "name": "@dsh-external/dsh-tray",
+  "name": "@qing3a/dsh-tray",
   "version": "0.1.0",
   "description": "Windows 系统托盘插件：托盘图标 + 菜单（打开界面/状态/退出）+ 气泡通知，基于 trayicon（exe 宿主，无 native 编译）",
   "type": "module",
@@ -30,5 +30,19 @@
     "build": "tsc -p tsconfig.json",
     "prepare": "tsc -p tsconfig.json"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/qing3a/dsh-tray.git"
+  },
+  "keywords": [
+    "dsh",
+    "deepseek-harness",
+    "dsh-plugin",
+    "plugin",
+    "tray",
+    "trayicon",
+    "windows",
+    "system-tray"
+  ]
 }
