@@ -15,20 +15,22 @@ DeepSeek Harness Windows 系统托盘插件：托盘图标 + 菜单（打开界�
 ## 安装
 
 ```bash
+# 生产安装（npm，agent 可直接执行）
+pnpm dsh plugin --profile web add @qing3a/dsh-tray
+pnpm dsh --profile web
+# Windows 任务栏应出现 DSH 托盘图标
+
 # 开发模式（需 Node >= 22 + pnpm）
 git clone https://github.com/qing3a/dsh-tray.git
 cd dsh-tray && pnpm install && pnpm build
-
 cd <path-to-deepseek-harness>
 pnpm dsh plugin --profile web add link:$(pwd)/dsh-tray
-pnpm dsh --profile web
-# Windows 任务栏应出现 DSH 托盘图标
 ```
 
 ## 卸载
 
 ```bash
-pnpm dsh plugin --profile web remove @dsh-external/dsh-tray
+pnpm dsh plugin --profile web remove @qing3a/dsh-tray
 ```
 
 ## 配置
